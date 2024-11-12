@@ -7,34 +7,15 @@ const Login = () => {
     const navigate = useNavigate();
 
     const handleLogin = async () => {
-        try {
-            // Configura la URL de autenticación de Supabase para abrir en una ventana emergente
-            const { data, error } = await supabase.auth.signInWithOAuth({
-                provider: 'google',
-                options: {
-                    redirectTo: `${window.location.origin}/callback`, // Redirecciona a una URL de callback que puedes manejar
-                },
-            });
+        const { error } = await supabase.auth.signInWithOAuth({
+            provider: 'google',
+        });
 
-            if (error) {
-                console.error('Error al iniciar sesión:', error.message);
-            } else {
-               
-         
-            }
-        } catch (error) {
-            console.error('Error al abrir la ventana de autenticación:', error);
-        }
-    };
-
-    const verificarSesion = async () => {
-        const { data: { user }, error } = await supabase.auth.getUser();
         if (error) {
-            console.error('Error al verificar la sesión:', error.message);
-        } else if (user) {
-            navigate('/');
+            console.error('Error al iniciar sesión:', error.message);
         } else {
-            console.log('No hay usuario, redirigiendo a /');
+            // Redirigir a la página principal o verificar sesión
+            navigate('/main');
         }
     };
 

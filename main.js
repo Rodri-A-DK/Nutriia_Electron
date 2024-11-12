@@ -13,7 +13,7 @@ function createWindow() {
     //configuraciones extras de la ventanita de electron
   });
 win.menuBarVisible=false //para ocultar la barrita fea
-  win.loadURL("http://localhost:3000"); // Aquí correrá Next.js
+  win.loadURL("https://rodri-a-dk.github.io/Nutriia_Electron/"); // Aquí correrá Next.js
 }
 
 app.on("ready", createWindow);
