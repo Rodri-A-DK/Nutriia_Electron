@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Nutriia_Electron/static/css/main.4711cd42.css",
-    "main.js": "/Nutriia_Electron/static/js/main.9c9fd20e.js",
+    "main.js": "/Nutriia_Electron/static/js/main.af992fae.js",
     "static/js/952.3749e989.chunk.js": "/Nutriia_Electron/static/js/952.3749e989.chunk.js",
     "static/js/239.00891771.chunk.js": "/Nutriia_Electron/static/js/239.00891771.chunk.js",
     "static/js/213.a674d27b.chunk.js": "/Nutriia_Electron/static/js/213.a674d27b.chunk.js",
@@ -9,7 +9,7 @@
     "static/media/logo.png": "/Nutriia_Electron/static/media/logo.c2737b87d954adf6b92c.png",
     "index.html": "/Nutriia_Electron/index.html",
     "main.4711cd42.css.map": "/Nutriia_Electron/static/css/main.4711cd42.css.map",
-    "main.9c9fd20e.js.map": "/Nutriia_Electron/static/js/main.9c9fd20e.js.map",
+    "main.af992fae.js.map": "/Nutriia_Electron/static/js/main.af992fae.js.map",
     "952.3749e989.chunk.js.map": "/Nutriia_Electron/static/js/952.3749e989.chunk.js.map",
     "239.00891771.chunk.js.map": "/Nutriia_Electron/static/js/239.00891771.chunk.js.map",
     "213.a674d27b.chunk.js.map": "/Nutriia_Electron/static/js/213.a674d27b.chunk.js.map",
@@ -17,6 +17,6 @@
   },
   "entrypoints": [
     "static/css/main.4711cd42.css",
-    "static/js/main.9c9fd20e.js"
+    "static/js/main.af992fae.js"
   ]
 }
