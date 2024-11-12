@@ -12,7 +12,7 @@ const VerificacionDeLicencia = () => {
         const verifyUserLicense = async () => {
             const user = supabase.auth.user();
             if (!user) {
-                navigate('/'); // Redirige al inicio de sesión si no hay usuario
+                navigate('/main'); // Redirige al inicio de sesión si no hay usuario
                 return;
             }
 

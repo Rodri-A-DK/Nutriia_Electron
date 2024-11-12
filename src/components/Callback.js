@@ -8,11 +8,20 @@ const Callback = () => {
 
     useEffect(() => {
         const fetchUser = async () => {
-            const { data: { user } } = await supabase.auth.getUser();
-            if (user) {
-                navigate('/main');  // Redirige a la página principal
-            } else {
-                navigate('/login');  // Si falla, vuelve al login
+            try {
+                const { data: { user }, error } = await supabase.auth.getUser();
+                if (error) {
+                    console.error('Error al obtener el usuario:', error.message);
+                    // Redirige al usuario a la página de error o muestra un mensaje 
+                    navigate('/error'); // O lo que corresponda
+                } else if (user) {
+                    navigate('/main');
+                } else {
+                    navigate('/login');
+                }
+            } catch (error) {
+                console.error('Error al obtener el usuario:', error.message);
+                navigate('/error'); 
             }
         };
 
