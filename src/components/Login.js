@@ -12,7 +12,7 @@ const Login = () => {
                 // Si necesitas una URL de redirección personalizada, 
                 // puedes establecer redirectTo aquí.
                 // Por ejemplo: 
-                // redirectTo: `${window.location.origin}/callback`
+  redirectTo: `${window.location.origin}/callback`
             });
 
             if (error) {
