@@ -19,7 +19,7 @@ const Login = () => {
                 console.error('Error al iniciar sesión:', error.message);
             } else {
                 // Redirigir a la página principal o verificar sesión
-                navigate('/main'); // Puedes usar '/main' o '/' según tu configuración
+                navigate('/main'); // Puedes usar '/main' o '/' según tu configuració
             }
         } catch (error) {
             console.error('Error al abrir la ventana de autenticación:', error);
